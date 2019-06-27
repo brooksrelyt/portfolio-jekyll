@@ -1,0 +1,20 @@
+---
+---
+@import "variables";
+@import "normalize";
+@import "mixins";
+@import "base";
+
+// UTILITIES - Self-contained utilities
+@import "util/typography";
+@import "util/animations";
+
+// COMPONENTS - Self-contained components
+@import "components/nav";
+@import "components/footer";
+@import "components/banner";
+
+// PAGES - Page-specific styles
+@import "pages/homepage";
+@import "pages/about";
+@import "pages/projects";

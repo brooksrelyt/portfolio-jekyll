@@ -1,0 +1,224 @@
+/* -------------------------------- 
+
+Grid Folio Homepage/Projects style
+
+-------------------------------- */
+ul.gallery-grid {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    display: block;
+
+    li {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 25%; /* Fallback */
+        width: -webkit-calc(100% / 2);
+        width: -moz-calc(100% / 2);
+        width: -ms-calc(100% / 2);
+        width: calc(100% / 2);
+        display: block;
+
+        @include breakpoint(screen-sm) {
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    &::after {
+        clear: both; 
+    }
+}
+
+.arrow-down {
+    margin: 0 auto;
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 30px solid #000000;
+}
+
+
+.project-container {
+    margin: 0;
+    padding: 0;
+    display: block;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.project-container-fitpotato {
+    background:#2c3e50;
+}
+
+.info-container {
+    padding-top: 75px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+    max-width: 850px;
+
+    h2 {
+        text-transform: uppercase;
+        /*font-family: Georgia, serif;*/
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        color: $cool_blue;
+    }
+
+    p {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+}
+
+.info-container-img {
+    padding-top: 75px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.about-intro {
+  margin-bottom: 20px;
+  font-size: 20px !important;
+    font-weight: 200;
+    line-height: 32px !important;
+}
+
+.project-caption {
+    padding-top: 75px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+    max-width: 850px;
+
+    h2 {
+        text-transform: uppercase;
+        /*font-family: Georgia, serif;*/
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        color: $cool_blue;
+    }
+
+    p {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 32px;
+        color: #94a4a5;
+    }
+}
+
+.bottom-bar {
+    background: #f1f1f1 none repeat scroll 0 0;
+    height: 65px;
+    position: relative;
+
+    a.bar-icon {
+        color: #e1e1e1;
+        line-height: 65px;
+        margin: 0 1.5em;
+        font-size: 1.5em;
+
+        &.icon-left {
+            left: 50%;
+            position: absolute;
+        }
+
+        &.icon-center {
+            left: 50%;
+            position: absolute;
+            margin: 0 auto;
+            margin-left: -0.5em;
+        }
+
+        &.icon-right {
+            right: 0;
+            position: absolute;
+        }
+
+        &:hover, &:focus {
+            color: #fff;
+        }
+    }
+}
+
+// Aviatrix App - Wirefram layout
+section.wireframes {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    padding: 75px 0;
+    background-color: #fafafa;
+
+    .wire-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: block;
+        overflow: hidden;
+    }
+
+    .wire-inner .wired img {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+section.wireframes .wire-container 
+
+section.wireframes .wire-container .wire-inner .wired-text {
+  position: absolute;
+  max-width: 600px;
+  margin-top: -400px; 
+}
+
+section.wireframes .wire-container .wire-inner .wired-text h2 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+section.wireframes .wire-container .wire-inner .wired-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #b6b6b6;
+}
+
+section.wireframes .wire-container .wire-inner .wired-text span.wired-rectangle {
+  width: 675px;
+  height: 120px;
+  background: #39c6f4;
+  opacity: 0.2;
+  display: block;
+  position: absolute;
+  margin-top: -125px; 
+  margin-left: -50px;
+}
+
