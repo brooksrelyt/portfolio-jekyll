@@ -74,6 +74,9 @@ a {
         border: none; 
     }
 }
+.gray {
+    color: $gray;
+}
 
 // Positioning
 .left {
@@ -81,6 +84,12 @@ a {
 }
 .right {
     float: right;
+}
+.bold {
+    font-weight: bold;
+}
+.letter-spacing {
+    letter-spacing: 1px;
 }
 .center {
     text-align: center;

@@ -1,8 +1,27 @@
-code {
-	overflow: auto !important;
-	word-wrap: normal !important;
-	white-space: pre !important;
+.pill-container {
+	background-color: $offwhite;
+	padding: 10px 15px;
+
+	.badge {
+		font-size: 10px;
+		text-transform: uppercase;
+	}
 }
-.toolbar {
-	display: none;
+
+.card-body {
+	.card-title {
+		font-size: 16px;
+		font-weight: 600;
+		color: $gray;
+	}
+	.card-text {
+		font-size: 13px;
+		line-height: 16px;
+		color: $gray;
+	}
+	a {
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
 }
