@@ -120,6 +120,62 @@ img {
     -ms-interpolation-mode: bicubic;
 }
 
+// Padding Classes
+.spaces {
+    padding-top: 5.125rem;
+    padding-bottom: 5.125rem;
+
+    @include media-breakpoint-down(md) {padding-top: 3.5rem; padding-bottom: 3.5rem; }
+}
+.spaces-large {
+    padding-top: 9.125rem;
+    padding-bottom: 9.125rem;
+
+    @include media-breakpoint-down(md) { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+}
+.med-spaces {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+// Padding Classes
+.gutter {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.extra-gutter {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.no-pad-all {
+    padding: 0 !important;
+}
+.no-pad {
+    padding: 0 !important;
+}
+.no-pad-top {
+    padding-top: 0 !important;
+}
+.no-pad-b {
+    padding-bottom: 0 !important;
+}
+.no-marg {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.no-marg-all {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.no-marg-top {
+    margin-top: 0 !important;
+}
+.no-marg-b {
+    margin-bottom: 0 !important;
+}
+
 // List Styles
 ul,
 ol,

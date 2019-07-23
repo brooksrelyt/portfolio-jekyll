@@ -16,7 +16,7 @@ homepage:
       link: '/projects/100-icons/'
       img: '/img/homepage/newest-icons.jpg'
       data_width: '1280'
-      data_height: '1400'
+      data_height: '700'
       animation: 'module'
     -
       title: 'BoatUS Foundation Redesign'
@@ -25,7 +25,7 @@ homepage:
       link: '/projects/boatus-foundation/'
       img: '/img/splash/grid2.jpg'
       data_width: '1280'
-      data_height: '1400'
+      data_height: '700'
       animation: 'module'
     -
       title: 'Free Office Icon Set'
@@ -61,7 +61,7 @@ homepage:
       link: '/projects/social-media-icons/'
       img: '/img/homepage/social.jpg'
       data_width: '1280'
-      data_height: '1400'
+      data_height: '700'
       animation: 'module'
     -
       title: 'Free Minimal Browser'
@@ -79,7 +79,7 @@ homepage:
       link: '/projects/fit-potato/'
       img: '/img/homepage/fitpotato.jpg'
       data_width: '1280'
-      data_height: '1400'
+      data_height: '700'
       animation: 'module'
     -
       title: 'Aviatrix Publication'
@@ -154,3 +154,6 @@ homepage:
       data_height: '700'
       animation: 'module'
     -
+downloads:
+  -
+    total: '6,625+'
