@@ -1,4 +1,4 @@
-	{% if page.title != 'BoatUS Foundation Redesign: TylerBrooksDesigns' %}
+	{% if page.title != 'BoatUS Foundation Redesign: TylerBrooksDesigns' and page.title != 'UMD: TylerBrooksDesigns' %}
 	<div class="not-full bg parallax" style="background-image:url('{{ site.baseurl }}{{ page.banner }}');" data-img-width="1450" data-img-height="683" data-diff="100">
         <div class="bg-content">
             <div class="bg-inner-content">
@@ -21,3 +21,14 @@
 	    </div>
 	</div>
 	{% endif %}
+
+    {% if page.title == 'UMD: TylerBrooksDesigns' %}
+    <div class="not-full bg parallax" style="background-image:url('{{ site.baseurl }}{{ page.banner }}');" data-img-width="1450" data-img-height="683" data-diff="100">
+        <div class="bg-content">
+            <div class="bg-inner-content">
+                <h1 class="bold white" style="display: block;">University of Maryland, College Park</h1>
+                <h3 class="bold white">Projects List</h3>
+            </div>
+        </div>
+    </div>
+    {% endif %}

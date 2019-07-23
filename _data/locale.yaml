@@ -1,6 +1,15 @@
 homepage:
   projects:
     -
+      title: 'University of Maryland, College Park'
+      tags: '<span>React</span><span>Jekyll</span><span>Web Design</span>'
+      origin: 'UMD.EDU'
+      link: '/projects/maryland/'
+      img: '/img/maryland/background.png'
+      data_width: '1280'
+      data_height: '1400'
+      animation: 'module'
+    -
       title: '100 Free Line Icons'
       tags: '<span>Illustrator</span><span>Icon Design</span><span>Web Design</span>'
       origin: 'TYLERBROOKSDESIGNS.COM'
