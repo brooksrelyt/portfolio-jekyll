@@ -310,6 +310,11 @@
     line-height: 32px;
     z-index: 100;
 
+    &.email {
+        left: 50px;
+        display: table;
+    }
+
     @include breakpoint(screen-xs) {
         display: none;
     }

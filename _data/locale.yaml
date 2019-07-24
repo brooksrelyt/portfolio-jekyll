@@ -1,11 +1,11 @@
 homepage:
   projects:
     -
-      title: 'University of Maryland, College Park'
-      tags: '<span>React</span><span>Jekyll</span><span>Web Design</span>'
+      title: 'Front-End Web Developer<br>University of Maryland, College Park'
+      tags: '<span>Web Design/Development</span><span>React/Gatsby</span><span>Jekyll</span>'
       origin: 'UMD.EDU'
       link: '/projects/maryland/'
-      img: '/img/maryland/background.png'
+      img: '/img/maryland/background.jpg'
       data_width: '1280'
       data_height: '1400'
       animation: 'module'
@@ -25,7 +25,7 @@ homepage:
       link: '/projects/boatus-foundation/'
       img: '/img/splash/grid2.jpg'
       data_width: '1280'
-      data_height: '700'
+      data_height: '1400'
       animation: 'module'
     -
       title: 'Free Office Icon Set'
@@ -52,7 +52,7 @@ homepage:
       link: '/projects/imnicksouza/'
       img: '/img/homepage/nsm.jpg'
       data_width: '1280'
-      data_height: '1400'
+      data_height: '700'
       animation: 'module'
     -
       title: 'Free Social Media Icons'
