@@ -29,6 +29,11 @@ body {
   color: $body-color;
 }
 
+.row {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+}
+
 /* -------------------------------- 
 
 Scroll Bar style
@@ -287,10 +292,6 @@ dl dd {
 .no-pad {
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
-
-.spaces {
-    padding: 80px 0;
 }
 
 hr {
@@ -1122,6 +1123,10 @@ Animations
     display: block;
     position: relative;
     margin: 0 auto;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
 }
 
 
