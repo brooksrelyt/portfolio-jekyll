@@ -1,58 +1,53 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Final Project (DEV)</title>
+<html lang="en" class="no-js">
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../../final/css/leaflet.css">
-    <link rel="stylesheet" type="text/css" href="../../final/css/style.css">
+    {% include head.html %}
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-</head>
 <body>
+    
+    {% include header.html %}
     <div id="svg-container">
         <div id="map"></div>
-        <div id="filterbar" class="spaces">
+        <div id="filterbar" class="med-spaces">
             <div class="row">
-                <div class="col">
+                <div class="col-md-12">
                     <header>
-                        <button type="button" id="reset">RESET</button>
+                        <button type="button" class="btn" id="reset">RESET</button>
                         <p class="bold location">College Park, MD</p>
                         <h1>Hunger-de-fusion</h1>
                     </header>
                 </div>
             </div>
 
-            <div class="row space filter">
-                <div class="col">
+            <div class="row filter">
+                <div class="col-md-12">
                     <h2>Star Rating</h2>
                     <div id="star-filter">
                         <div class="boxes">
                             <input class="star" type="checkbox" value="5" id="s5" name="check" />
-                            <label for="s5"><img src="../../final/img/5star.png"></label>
+                            <label for="s5"><img class="img-fluid" src="{{ site.baseurl }}/img/fusion/5star.png"></label>
                         </div>
                         <div class="boxes">
                             <input class="star" type="checkbox" value="4" id="s4" name="check" />
-                            <label for="s4"><img src="../../final/img/4star.png"></label>
+                            <label for="s4"><img class="img-fluid" src="{{ site.baseurl }}/img/fusion/4star.png"></label>
                         </div>
                         <div class="boxes">
                             <input class="star" type="checkbox" value="3" id="s3" name="check" />
-                            <label for="s3"><img src="../../final/img/3star.png"></label>
+                            <label for="s3"><img class="img-fluid" src="{{ site.baseurl }}/img/fusion/3star.png"></label>
                         </div>
                         <div class="boxes">
                             <input class="star" type="checkbox" value="2" id="s2" name="check" />
-                            <label for="s2"><img src="../../final/img/2star.png"></label>
+                            <label for="s2"><img class="img-fluid" src="{{ site.baseurl }}/img/fusion/2star.png"></label>
                         </div>
                         <div class="boxes">
                             <input class="star" type="checkbox" value="1" id="s1" name="check" />
-                            <label for="s1"><img src="../../final/img/star.png"></label>
+                            <label for="s1"><img class="img-fluid" src="{{ site.baseurl }}/img/fusion/star.png"></label>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row space filter">
-                <div class="col">
+            <div class="row filter">
+                <div class="col-md-12">
                     <h2>Price Range</h2>
                     <div id="price-filter">
                         <div class="boxes">
@@ -70,8 +65,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row space filter">
-                <div class="col">
+            <div class="row filter">
+                <div class="col-md-12">
                     <h2>Review Count</h2>
                     <div id="review-filter">
                         <div class="r-list">
@@ -113,12 +108,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row space filter">
-                <div class="col">
+            <div class="row filter">
+                <div class="col-md-12">
                     <h2>Category</h2>
                     <div id="cat-filter">
                         <div class="row r-list">
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="boxes">
                                     <input class="category" type="checkbox" value="Ramen" id="c1" name="category"/> 
                                     <label for="c1">Ramen</label>
@@ -156,7 +151,7 @@
                                     <label for="c9">Mexican</label>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <div class="boxes">
                                     <input class="category" type="checkbox" value="Jazz & Blues" id="c10" name="category"/> 
                                     <label for="c10">Jazz & Blues</label>
@@ -194,23 +189,15 @@
                     </div>
                 </div>
             </div>
-            <div class="row space filter">
+            <div class="row filter">
                 <div class="col-12">
-                    <a href="{{ site.baseurl }}/projects/yelp-fusion-api/">Return to Ty Brooks Designs</a>
+                    <a class="slide-link bold" href="{{ site.baseurl }}/projects/yelp-fusion-api/">&larr; Return to Ty Brooks Designs</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- LIBRARIES -->
-    <script type="text/javascript" src="../../final/js/d3.min.js"></script>
-    <script type="text/javascript" src="../../final/js/leaflet0.7.7.js"></script>
+    {% include footer.html %}
 
-    <!-- Our JS -->
-    <script type="text/javascript" src="../../final/js/map.js"></script>
-    
-    <!-- jQuery and Our JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../../final/js/script.js"></script>
 </body>
 </html>

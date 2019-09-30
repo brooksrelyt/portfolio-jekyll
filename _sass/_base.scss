@@ -91,10 +91,10 @@ a {
     float: right;
 }
 .bold {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 .letter-spacing {
-    letter-spacing: 1px;
+    letter-spacing: 1px !important;
 }
 .center {
     text-align: center;
