@@ -14,19 +14,19 @@ map._initPathRoot()
 var svg = d3.select("#map").select("svg"),
 g = svg.append("g");
 
-var svg = d3.select("div#svg-container")
+var svg = d3.select("body")
   .append("svg")
   .attr("width",300)
   .attr("height",300);
   
-var tooltip = d3.select("div#svg-container").append("div")
+var tooltip = d3.select("body").append("div")
   .attr("class", "tooltip")
   .style('opacity', 0)
   .style('position', 'absolute')
   .style('padding', '0 10px');
 
 
-d3.json("../../assets/data/yelp-fusion.json", function(collection) {
+d3.json("../../data/yelp-fusion.json", function(collection) {
   // Add a LatLng object to each item in the dataset 
   collection.businesses.forEach(function(d) {
     d.LatLng = new L.LatLng(d.coordinates.latitude,

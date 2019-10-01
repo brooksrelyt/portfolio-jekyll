@@ -35,6 +35,15 @@
     </footer>
 
     <script src="{{ site.baseurl }}/js/vendor/jquery-2.1.1.js"></script>
+
+
+    {% if page.layout == 'hunger-de-fusion' %}
+    <script type="text/javascript" src="{{ site.baseurl}}/js/vendor/d3.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl}}/js/vendor/leaflet0.7.7.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl}}/js/vendor/map.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl}}/js/vendor/script.js"></script>
+    {% endif %}
+    
     <!-- <script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="{{ site.baseurl }}/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="{{ site.baseurl }}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -57,12 +66,6 @@
     </script>
     {% endif %}
 
-    {% if page.layout == 'hunger-de-fusion' %}
-    <script type="text/javascript" src="{{ site.baseurl}}/js/vendor/d3.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl}}/js/vendor/leaflet0.7.7.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl}}/js/vendor/map.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl}}/js/vendor/script.js"></script>
-    {% endif %}
 
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TFW32K"
