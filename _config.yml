@@ -16,7 +16,7 @@
 title: Tyler Brooks Designs
 email: brooksrelyt@gmail.com
 description: Hi, I am Tyler a Web and Graphic Designer with a passion for creating first-class icons and digital experiences. This website has evolved from a personal portfolio to a website with a collection of free downloadable design resources.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "tbrks.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
