@@ -514,8 +514,11 @@
 nav, #map, #filterbar, #detailbar {
     position: fixed;
     top: 0;
+}
+#map, #filterbar, #detailbar {
     margin-top: 55px;
 }
+
 
 // nav {
 //     width: 100%;
