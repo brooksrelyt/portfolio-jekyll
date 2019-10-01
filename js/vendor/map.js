@@ -26,7 +26,7 @@ var tooltip = d3.select("body").append("div")
   .style('padding', '0 10px');
 
 
-d3.json("../../_data/yelp-fusion.json", function(collection) {
+d3.json("../../data/yelp-fusion.json", function(collection) {
   // Add a LatLng object to each item in the dataset 
   collection.businesses.forEach(function(d) {
     d.LatLng = new L.LatLng(d.coordinates.latitude,
