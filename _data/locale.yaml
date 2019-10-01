@@ -10,6 +10,15 @@ homepage:
       data_height: '1400'
       animation: 'module'
     -
+      title: 'Hunger-de-fusion - Grad School (MIM)'
+      tags: '<span>Web Design/Development</span><span>D3.js</span><span>Javascript</span>'
+      origin: 'iSchool, MIM'
+      link: '/projects/yelp-fusion-api/'
+      img: '/img/hunger/banner.jpg'
+      data_width: '1280'
+      data_height: '700'
+      animation: 'module'
+    -
       title: '100 Free Line Icons'
       tags: '<span>Illustrator</span><span>Icon Design</span><span>Web Design</span>'
       origin: 'TYLERBROOKSDESIGNS.COM'
@@ -18,6 +27,7 @@ homepage:
       data_width: '1280'
       data_height: '700'
       animation: 'module'
+
     -
       title: 'BoatUS Foundation Redesign'
       tags: '<span>HTML/CSS</span><span>Web Design</span><span>UI/UX Design</span>'
