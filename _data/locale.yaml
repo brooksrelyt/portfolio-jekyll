@@ -16,7 +16,7 @@ homepage:
       link: '/projects/yelp-fusion-api/'
       img: '/img/hunger/banner.jpg'
       data_width: '1280'
-      data_height: '700'
+      data_height: '1400'
       animation: 'module'
     -
       title: '100 Free Line Icons'
@@ -25,9 +25,8 @@ homepage:
       link: '/projects/100-icons/'
       img: '/img/homepage/newest-icons.jpg'
       data_width: '1280'
-      data_height: '700'
+      data_height: '700ew'
       animation: 'module'
-
     -
       title: 'BoatUS Foundation Redesign'
       tags: '<span>HTML/CSS</span><span>Web Design</span><span>UI/UX Design</span>'
@@ -89,7 +88,7 @@ homepage:
       link: '/projects/fit-potato/'
       img: '/img/homepage/fitpotato.jpg'
       data_width: '1280'
-      data_height: '700'
+      data_height: '1400'
       animation: 'module'
     -
       title: 'Aviatrix Publication'
