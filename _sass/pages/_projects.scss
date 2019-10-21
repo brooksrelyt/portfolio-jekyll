@@ -139,7 +139,7 @@ ul.gallery-grid {
     position: relative;
 
     a.bar-icon {
-        color: #e1e1e1;
+        color: $cool_blue;
         line-height: 65px;
         margin: 0 1.5em;
         font-size: 1.5em;
@@ -162,7 +162,7 @@ ul.gallery-grid {
         }
 
         &:hover, &:focus {
-            color: #fff;
+            color: $dark_blue;
         }
     }
 }

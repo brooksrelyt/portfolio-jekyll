@@ -1,7 +1,7 @@
 homepage:
   projects:
     -
-      title: 'Senior Front-End Web Designer/Developer<br>University of Maryland, College Park'
+      title: 'Senior Front-End Web Designer/Developer<br>University of Maryland, College Park - 2016-present'
       tags: '<span>Web Design/Development</span><span>React/Gatsby</span><span>Jekyll</span>'
       origin: 'UMD.EDU'
       link: '/projects/maryland/'
@@ -10,7 +10,7 @@ homepage:
       data_height: '1400'
       animation: 'module'
     -
-      title: 'Hunger-de-fusion - Grad School (MIM)'
+      title: 'Hunger-de-fusion - Grad School (MIM) - 2018'
       tags: '<span>Web Design/Development</span><span>D3.js</span><span>Javascript</span>'
       origin: 'iSchool, MIM'
       link: '/projects/yelp-fusion-api/'
@@ -19,16 +19,16 @@ homepage:
       data_height: '1400'
       animation: 'module'
     -
-      title: '100 Free Line Icons'
+      title: '100 Free Line Icons - 2016'
       tags: '<span>Illustrator</span><span>Icon Design</span><span>Web Design</span>'
       origin: 'TYLERBROOKSDESIGNS.COM'
       link: '/projects/100-icons/'
       img: '/img/homepage/newest-icons.jpg'
       data_width: '1280'
-      data_height: '700ew'
+      data_height: '700'
       animation: 'module'
     -
-      title: 'BoatUS Foundation Redesign'
+      title: 'BoatUS Foundation Redesign - 2016'
       tags: '<span>HTML/CSS</span><span>Web Design</span><span>UI/UX Design</span>'
       origin: 'BOATUS.ORG'
       link: '/projects/boatus-foundation/'
@@ -37,7 +37,7 @@ homepage:
       data_height: '1400'
       animation: 'module'
     -
-      title: 'Free Office Icon Set'
+      title: 'Free Office Icon Set - 2016'
       tags: '<span>Illustrator</span><span>Icon Design</span><span>Web Design</span>'
       origin: 'TYLERBROOKSDESIGNS.COM'
       link: '/projects/icon-font/'
@@ -46,7 +46,7 @@ homepage:
       data_height: '1400'
       animation: 'module'
     -
-      title: 'Free Annual Report Icon Set'
+      title: 'Free Annual Report Icon Set - 2016'
       tags: '<span>Illustrator</span><span>Icon Design</span><span>Web Design</span>'
       origin: 'TYLERBROOKSDESIGNS.COM'
       link: '/projects/free-icons/'
@@ -55,7 +55,7 @@ homepage:
       data_height: '1400'
       animation: 'module'
     -
-      title: 'ImNickSouza - Nick Souza Media'
+      title: 'ImNickSouza - Nick Souza Media - 2015'
       tags: '<span>Web Design</span><span>Portfolio Design</span>'
       origin: 'IMNICKSOUZA.COM'
       link: '/projects/imnicksouza/'
@@ -64,7 +64,7 @@ homepage:
       data_height: '700'
       animation: 'module'
     -
-      title: 'Free Social Media Icons'
+      title: 'Free Social Media Icons - 2015'
       tags: '<span>Illustrator</span><span>Icon Design</span><span>Web Design</span>'
       origin: 'BEHANCE.NET'
       link: '/projects/social-media-icons/'
@@ -73,7 +73,7 @@ homepage:
       data_height: '700'
       animation: 'module'
     -
-      title: 'Free Minimal Browser'
+      title: 'Free Minimal Browser - 2015'
       tags: '<span>Download</span><span>Illustrator</span><span>Photoshop</span>'
       origin: 'TYLERBROOKSDESIGNS.COM'
       link: '/projects/browser/'
@@ -82,16 +82,16 @@ homepage:
       data_height: '1400'
       animation: 'module'
     -
-      title: 'FitPotato'
+      title: 'FitPotato - 2014'
       tags: '<span>Photoshop</span><span>Web Design</span>'
       origin: '99DESIGNS.COM'
       link: '/projects/fit-potato/'
       img: '/img/homepage/fitpotato.jpg'
       data_width: '1280'
-      data_height: '1400'
+      data_height: '700'
       animation: 'module'
     -
-      title: 'Aviatrix Publication'
+      title: 'Aviatrix Publication - 2013'
       tags: '<span>InDesign</span><span>Publication Design</span>'
       origin: 'ROGER WILLIAMS UNIVERSITY 2013'
       link: '/projects/aviatrix/'
@@ -100,7 +100,7 @@ homepage:
       data_height: '1400'
       animation: 'module'
     -
-      title: 'Aviatrix App'
+      title: 'Aviatrix App - 2013'
       tags: '<span>InDesign</span><span>Web Design</span><span>UX/UI App Templates</span>'
       origin: 'ROGER WILLIAMS UNIVERSITY 2013'
       link: '/projects/aviatrix-app/'
