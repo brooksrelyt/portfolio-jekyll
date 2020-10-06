@@ -39,9 +39,6 @@
 
 </footer>
 
-<button type="button" onclick="loadData()">Load Spreadsheet Data</button>
-<div id="display"></div>
-
 <script src="{{ site.baseurl }}/js/vendor/jquery-2.1.1.js"></script>
 <!-- <script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"></script> -->
 <script src="{{ site.baseurl }}/node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -78,15 +75,23 @@
     })(window, document, 'script', 'dataLayer', 'GTM-TFW32K');</script>
 <!-- End Google Tag Manager -->
 <script>
-    function loadData() {
-        var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRE6wsscceMRMIyMyXbPFTgMVcU-0qfkEHO9rm2ta6Bw33ZtwUMzHhiJJGNzRI5B8na6lec110NIyXu/pub?output=csv";
-        xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                document.getElementById("display").innerHTML = xmlhttp.responseText;
-            }
-        };
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send(null);
-    }
+    // function loadData() {
+    //     var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRE6wsscceMRMIyMyXbPFTgMVcU-0qfkEHO9rm2ta6Bw33ZtwUMzHhiJJGNzRI5B8na6lec110NIyXu/pub?output=csv";
+    //     xmlhttp = new XMLHttpRequest();
+    //     xmlhttp.onreadystatechange = function () {
+    //         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    //             document.getElementById("display").innerHTML = xmlhttp.responseText;
+    //         }
+    //     };
+    //     xmlhttp.open("GET", url, true);
+    //     xmlhttp.send(null);
+    // }
+    var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRE6wsscceMRMIyMyXbPFTgMVcU-0qfkEHO9rm2ta6Bw33ZtwUMzHhiJJGNzRI5B8na6lec110NIyXu/pub?output=csv";
+    $.ajax({
+        url: url,
+        dataType: "jsonp",
+        success: function (data) {
+            // data.feed.entry is an array of objects that represent each cell
+        },
+    });
 </script>
