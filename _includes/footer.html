@@ -78,7 +78,7 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
 <script type="text/javascript">
-    var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRB4E_6RnpLP1wWMjqcwsUvotNATB8Np3OntlXb7066ULcAHI9oqqRhucltFifPTYNd7DRNRE56oTdt/pub?output=csv';
+    var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRE6wsscceMRMIyMyXbPFTgMVcU-0qfkEHO9rm2ta6Bw33ZtwUMzHhiJJGNzRI5B8na6lec110NIyXu/pub?output=csv';
 
     function init() {
         Papa.parse(public_spreadsheet_url, {
@@ -95,7 +95,7 @@
 
         // data comes through as a simple array since simpleSheet is turned on
         alert("Successfully processed " + data.length + " rows!")
-        document.getElementById("food").innerHTML = "<strong>Foods:</strong> " + [data[0].Name, data[1].Name, data[2].Name].join(", ");
+        document.getElementById("food").innerHTML = "<strong>Foods:</strong> " + [data[0].start_datetime, data[1].title, data[2].Name].join(", ");
         console.log(data);
     }
 
