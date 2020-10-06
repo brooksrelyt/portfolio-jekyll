@@ -75,16 +75,24 @@
     })(window, document, 'script', 'dataLayer', 'GTM-TFW32K');</script>
 <!-- End Google Tag Manager -->
 
-<script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+
+<script type='text/javascript'>
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQTDAD3ekI0B99KGwkKMAUuFkmPyJAQ493l5vqajkoWChrgmYzsNGR0Pb4KlKoOutXVS8-nAT_4bYzh/pub?output=csv';
+
     function init() {
-        Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vQTDAD3ekI0B99KGwkKMAUuFkmPyJAQ493l5vqajkoWChrgmYzsNGR0Pb4KlKoOutXVS8-nAT_4bYzh/pub?output=csv', {
-            download: true,
-            header: true,
-            complete: function (results) {
-                var data = results.data
-                console.log(data)
-            }
+        Tabletop.init({
+            key: publicSpreadsheetUrl,
+            callback: showInfo,
+            simpleSheet: true
         })
-        window.addEventListener('DOMContentLoaded', init)
     }
+
+    function showInfo(data, tabletop) {
+        alert('Successfully processed!')
+        console.log(data);
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
 </script>
