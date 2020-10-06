@@ -39,6 +39,9 @@
 
 </footer>
 
+<button type="button" onclick="loadData()">Load Spreadsheet Data</button>
+<div id="display"></div>
+
 <script src="{{ site.baseurl }}/js/vendor/jquery-2.1.1.js"></script>
 <!-- <script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"></script> -->
 <script src="{{ site.baseurl }}/node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -74,30 +77,16 @@
                 '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-TFW32K');</script>
 <!-- End Google Tag Manager -->
-<p id="food"></p>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-<script type="text/javascript">
-    var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRE6wsscceMRMIyMyXbPFTgMVcU-0qfkEHO9rm2ta6Bw33ZtwUMzHhiJJGNzRI5B8na6lec110NIyXu/pub?output=csv';
-
-    function init() {
-        Papa.parse(public_spreadsheet_url, {
-            download: true,
-            header: true,
-            complete: showInfo
-        })
+<script>
+    function loadData() {
+        var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRE6wsscceMRMIyMyXbPFTgMVcU-0qfkEHO9rm2ta6Bw33ZtwUMzHhiJJGNzRI5B8na6lec110NIyXu/pub?output=csv";
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("display").innerHTML = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send(null);
     }
-
-    window.addEventListener('DOMContentLoaded', init)
-
-    function showInfo(results) {
-        var data = results.data
-
-        // data comes through as a simple array since simpleSheet is turned on
-        alert("Successfully processed " + data.length + " rows!")
-        document.getElementById("food").innerHTML = "<strong>Foods:</strong> " + [data[0].start_datetime, data[1].title, data[2].Name].join(", ");
-        console.log(data);
-    }
-
-    document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");        
 </script>
