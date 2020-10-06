@@ -7,8 +7,7 @@
             <p>&nbsp;</p>
             <p><strong><a href="mailto:brooksrelyt@gmail.com">brooksrelyt@gmail.com</a></strong></p>
             <p>&copy; 2013
-                <script>new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());</script>,
-                Tyler
+                <script>new Date().getFullYear() > 2010 && document.write("-" + new Date().getFullYear());</script>, Tyler
                 Brooks</p>
         </div>
 
@@ -74,40 +73,3 @@
                 '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-TFW32K');</script>
 <!-- End Google Tag Manager -->
-<script>
-    // function loadData() {
-    //     var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRE6wsscceMRMIyMyXbPFTgMVcU-0qfkEHO9rm2ta6Bw33ZtwUMzHhiJJGNzRI5B8na6lec110NIyXu/pub?output=csv";
-    //     xmlhttp = new XMLHttpRequest();
-    //     xmlhttp.onreadystatechange = function () {
-    //         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-    //             document.getElementById("display").innerHTML = xmlhttp.responseText;
-    //         }
-    //     };
-    //     xmlhttp.open("GET", url, true);
-    //     xmlhttp.send(null);
-    // }
-
-    $.ajaxPrefilter(function (options) {
-        if (options.crossDomain && jQuery.support.cors) {
-            var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
-            options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
-            //options.url = "http://cors.corsproxy.io/url=" + options.url;
-        }
-    });
-
-    $.get(
-        'http://en.wikipedia.org/wiki/Cross-origin_resource_sharing',
-        function (response) {
-            console.log("> ", response);
-            $("#viewer").html(response);
-        });
-
-    var url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRE6wsscceMRMIyMyXbPFTgMVcU-0qfkEHO9rm2ta6Bw33ZtwUMzHhiJJGNzRI5B8na6lec110NIyXu/pub?output=csv";
-    $.ajax({
-        url: url,
-        dataType: "jsonp",
-        success: function (data) {
-            console.log(data)
-        },
-    });
-</script>
